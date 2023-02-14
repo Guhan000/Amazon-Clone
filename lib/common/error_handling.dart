@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import './utils.dart';
 import 'package:amazon_clone/common/utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;

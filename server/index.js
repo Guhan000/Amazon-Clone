@@ -9,7 +9,6 @@ const PORT = 3000;
 
 const url = "mongodb+srv://guhan:guhan@cluster0.b0njnpd.mongodb.net/?retryWrites=true&w=majority"
 
-
 // middleware
 app.use(express.json())
 app.use(AuthRouter);
@@ -28,6 +27,6 @@ mongoose.connect(url).then(() => {
 
 
 
-app.listen(PORT,"0.0.0.0", function () {
+app.listen(PORT, function () {
     console.log(`server connected at ${PORT}`)
 });

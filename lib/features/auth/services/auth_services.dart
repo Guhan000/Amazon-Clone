@@ -16,9 +16,10 @@ class AuthService {
     required String password,
   }) async {
     try {
+
       User user = User(
-          name: name,
           id: '',
+          name: name,
           email: email,
           password: password,
           address: '',
@@ -29,7 +30,7 @@ class AuthService {
         Uri.parse('$uri/api/signup'),
         body: user.toJson(),
         headers: <String,String> {
-          'Content-type': 'application.json; charset=UTF=8'
+          'Content-Type': 'application/json; charset=UTF-8'
         } 
       );
 
